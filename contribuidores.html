@@ -1,6 +1,104 @@
-Kau 
-nanda
-analu
-alina
-xai
-samuel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+     <!-- CSS Personalizado (styles.css) -->
+     <link rel="stylesheet" href="index.css">
+
+    <title>Contribuidores</title>
+</head>
+<body>
+
+    <div class="center-container">
+        <h1>Contribuidores!</h1>
+    </div>
+
+<!--inicio carrousel do cpt-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!--inicio itens carrousel-->
+          <div class="carousel-item active">
+            <p class="nomes text-warning">Alegria</p>
+            <img class="d-block w-100" src="img/alegria.jpg" alt="First">
+            <div>
+                <p class="carousel-caption-container">Kauany</p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="nomes text-danger">Raiva</p>
+            <img class="d-block w-100" src="img/raiva.jpg" alt="Second">
+            <div>
+                <p class="carousel-caption-container">Aline</p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="nomes text-purple">Medo</p>
+            <img class="d-block w-100" src="img/medo.jpg" alt="Third">
+            <div>
+                <p class="carousel-caption-container">Amanda</p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="nomes text-green">Desgosto</p>
+            <img class="d-block w-100" src="img/nojinho.jpg" alt="Fourth">
+            <div>
+                <p class="carousel-caption-container">Samuel</p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="nomes text-orange">Ansiedade</p>
+            <img class="d-block w-100" src="img/ansiedade.jpg" alt="Fifth">
+            <div>
+                <p class="carousel-caption-container">Chaiane</p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="nomes c">Vergonha</p>
+            <img class="d-block w-100" src="img/vergonha.jpg" alt="Sixth">
+            <div>
+                <p class="carousel-caption-container">Ana Luiza</p> 
+            </div>
+          </div>
+          <!--fim itens carrousel-->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon Home-link" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon Home-link" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+<!--fim carrousel do cpt-->
+
+<!-- Bootstrap JS (opcional, dependendo do seu uso) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Atualiza o texto adicional conforme o carrossel muda de imagem
+        $('#carouselExample').on('slide.bs.carousel', function (event) {
+            var index = $(event.relatedTarget).index();
+            var caption = $(event.relatedTarget).find('img').attr('alt');
+            $('#carouselCaption').text('Texto para ' + caption);
+        });
+    });
+</script>
+
+</body>
+</html>
+

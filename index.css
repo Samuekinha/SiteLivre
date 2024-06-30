@@ -68,7 +68,7 @@ img {
 h1 {
     /* Título principal */
     color: bisque;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 h2 {
@@ -97,29 +97,71 @@ h2 {
 
 /* Estilo personalizado para o carrossel */
 .carousel-item img {
-    height: 500px;
-    width: 100%;
+    height: 475px;
+    width: 10%;
     object-fit: cover;
     border-radius: 0 !important; /* Anula qualquer borda arredondada aplicada pelo Bootstrap */
-    display: flex;
-    justify-content: center;
 }
 
 .carousel-inner {
     max-width: 30%; /* Define a largura máxima para 50% da tela */
     margin: auto; /* Centraliza horizontalmente o carrossel */
-    display: flex;
-    justify-content: center;
 }
 
 .carouselExampleControls{
-    height: 100px;
+    height: 10px;
+}
+
+.center-container {
     display: flex;
     justify-content: center;
 }
 
-.center-container {
-    height: 50vh; /* Altura total da viewport */
+.nomes{
+    margin-bottom: -20px;
+    height: 30px;
     display: flex;
     justify-content: center;
+}
+
+.text-purple {
+    color: #6f42c1; /* Roxo */
+}
+.text-green {
+    color: #28a745; /* Verde */
+}
+.text-orange {
+    color: #fd7e14; /* Laranja */
+}
+.text-pink {
+    color: #e83e8c; /* Rosa */
+}
+
+.carousel-caption-container {
+    position: absolute;
+    bottom: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Texto com maior prioridade */
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 1px;
+    border-radius: 5px;
+    width: 80%; /* Largura da div do texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 25px;
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%; 
+}
+
+.carousel-item {
+    position: relative;
 }
