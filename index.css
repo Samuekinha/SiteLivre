@@ -1,4 +1,4 @@
-/* styles.css */
+/* index.css of contribuidores*/
 
 body {
     /* Geral */
@@ -127,14 +127,14 @@ h2 {
 .text-purple {
     color: #6f42c1; /* Roxo */
 }
-.text-green {
-    color: #28a745; /* Verde */
+.text-blue {
+    color: #3f0bb1; /* Azul */
 }
 .text-orange {
     color: #fd7e14; /* Laranja */
 }
 .text-pink {
-    color: #e83e8c; /* Rosa */
+    color: #dc3f88; /* Rosa */
 }
 
 .carousel-caption-container {
